@@ -1,0 +1,118 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #00e42a;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  width: 250px; /* Ancho del contenedor */
+  height: 100px; /* Alto del contenedor */
+  background-color: #f8f8f8; /* Fondo opcional */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.logo-container img {
+  width: 150px; /* Ancho de la imagen */
+  height: auto; /* Mantiene la proporción */
+}
+
+#headerTitle {
+  margin-left: 10px; /* Espacio entre el logo y el título */
+  font-size: 24px; /* Tamaño del texto */
+  color: #333; /* Color del texto */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f90000;
+}
+
+.carousel {
+  position: relative;
+  max-width: 80%;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 80%; /* Ajusta el tamaño del carrusel */
+  max-width: 600px; /* Limita el ancho máximo */
+  height: auto; /* Mantiene la proporción */
+  display: none;
+  margin: 0 auto; 
+}
+
+.carousel img.active {
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: rgb(10, 4, 4);
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.carousel-btn.prev {
+  left: 1rem;
+}
+
+.carousel-btn.next {
+  right: 1rem;
+}
+
+.producto {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+}
+
+.btn-comprar {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.btn-comprar:hover {
+  background-color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #175f15;
+  margin-top: 2rem;
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  margin: 0 0.5rem;
+  color: #333;
+  text-decoration: none;
+}

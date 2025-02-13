@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda y Estilo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo-container">
+          <img src="imagen/pixlr-image-generator-7d085328-be1f-42c3-bcf5-0d71ebcc4a1d.png" alt="Logo de Moda y Estilo">
+          <h1 id="headerTitle">Moda y Estilo</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="carrusel">
+        <h2>Tendencias de la Temporada</h2>
+        <div class="carousel">
+            <img src="imagen/blusa1.jpg" alt="Imagen 1" class="active">
+            <img src="imagen/blusa2.jpg" alt="Imagen 2">
+            <img src="imagen/camisa.jpg" alt="Imagen 3">
+            <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <main>
+        <!-- Sección de productos -->
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="producto">
+                <img src="imagen/camisa.jpg" alt="Camiseta de moda">
+                <h3>Camiseta de Moda</h3>
+                <p>Hecha de algodón orgánico, disponible en tallas S a XL.</p>
+                <p class="precio">$200 MXN</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="imagen/blusa2.jpg" alt="Camiseta de moda">
+                <h3>Camiseta de Moda</h3>
+                <p>Hecha de algodón orgánico, disponible en tallas S a XL.</p>
+                <p class="precio">$200 MXN</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="imagen/FB_IMG_1730563593466.jpg" alt="Camiseta de moda">
+                <h3>Camiseta de Moda</h3>
+                <p>Hecha de algodón orgánico, disponible en tallas S a XL.</p>
+                <p class="precio">$200 MXN</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+        </section>
+
+        <!-- Sección Acerca de -->
+        <section id="acerca">
+            <h2>Acerca de Nosotros</h2>
+            <p>En "Moda y Estilo", nos dedicamos a ofrecer ropa de calidad y tendencias para que siempre luzcas increíble. Fundada en 2020, nuestra misión es combinar estilo y comodidad.</p>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <form id="contactForm" action="guardar.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Moda y Estilo. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="scrip.js"></script>
+</body>
+</html>
+
